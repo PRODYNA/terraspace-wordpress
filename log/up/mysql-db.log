@@ -1,0 +1,61 @@
+# Logfile created on 2023-06-09 12:01:22 +0200 by logger.rb/v1.4.3
+[2023-06-09T12:01:22 #25928 terraspace up mysql-db]: Current directory: .terraspace-cache/westeurope/dev/stacks/mysql-db
+[2023-06-09T12:01:22 #25928 terraspace up mysql-db]: => terraform init -get -input=false >> /tmp/terraspace/log/init/mysql-db.log
+[2023-06-09T12:01:27 #25928 terraspace up mysql-db]: => terraform plan -input=false
+[2023-06-09T12:01:39 #25928 terraspace up mysql-db]: [0m[1mmodule.mysql-db.data.azurerm_resource_group.main: Reading...[0m[0m
+[2023-06-09T12:01:39 #25928 terraspace up mysql-db]: [0m[1mmodule.mysql-db.data.azurerm_resource_group.main: Read complete after 1s [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg][0m
+[2023-06-09T12:01:39 #25928 terraspace up mysql-db]: [0m[1mmodule.mysql-db.azurerm_mysql_flexible_server.mysql: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.DBforMySQL/flexibleServers/dev-mysql-training-1][0m
+[2023-06-09T12:01:40 #25928 terraspace up mysql-db]: [0m[1mmodule.mysql-db.azurerm_mysql_flexible_server_configuration.require_secure_transport: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.DBforMySQL/flexibleServers/dev-mysql-training-1/configurations/require_secure_transport][0m
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [0m
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [1mChanges to Outputs:[0m[0m
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]:     [90m# (2 unchanged attributes hidden)[0m[0m
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: 
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: You can apply this plan to save these new output values to the Terraform
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: state, without changing any real infrastructure.
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [33m╷[0m[0m
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [33m│[0m [0m[1m[33mWarning: [0m[0m[1mValue for undeclared variable[0m
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [33m│[0m [0m
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [33m│[0m [0m[0mThe root module does not declare a variable named "wordpress_instances" but
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [33m│[0m [0ma value was found in file "terraform.tfvars". If you meant to use this
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [33m│[0m [0mvalue, add a "variable" block to the configuration.
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [33m│[0m [0m
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [33m│[0m [0mTo silence these warnings, use TF_VAR_... environment variables to provide
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [33m│[0m [0mcertain "global" settings to all configurations in your organization. To
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [33m│[0m [0mreduce the verbosity of these warnings, use the -compact-warnings option.
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [33m╵[0m[0m
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: [90m
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: ─────────────────────────────────────────────────────────────────────────────[0m
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: 
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: Note: You didn't use the -out option to save this plan, so Terraform can't
+[2023-06-09T12:01:41 #25928 terraspace up mysql-db]: guarantee to take exactly these actions if you run "terraform apply" now.
+[2023-06-09T12:01:42 #25928 terraspace up mysql-db]: => terraform apply -auto-approve -input=false
+[2023-06-09T12:01:55 #25928 terraspace up mysql-db]: [0m[1mmodule.mysql-db.data.azurerm_resource_group.main: Reading...[0m[0m
+[2023-06-09T12:01:56 #25928 terraspace up mysql-db]: [0m[1mmodule.mysql-db.data.azurerm_resource_group.main: Read complete after 1s [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg][0m
+[2023-06-09T12:01:56 #25928 terraspace up mysql-db]: [0m[1mmodule.mysql-db.azurerm_mysql_flexible_server.mysql: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.DBforMySQL/flexibleServers/dev-mysql-training-1][0m
+[2023-06-09T12:01:57 #25928 terraspace up mysql-db]: [0m[1mmodule.mysql-db.azurerm_mysql_flexible_server_configuration.require_secure_transport: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.DBforMySQL/flexibleServers/dev-mysql-training-1/configurations/require_secure_transport][0m
+[2023-06-09T12:01:58 #25928 terraspace up mysql-db]: [0m
+[2023-06-09T12:01:58 #25928 terraspace up mysql-db]: [1mChanges to Outputs:[0m[0m
+[2023-06-09T12:01:58 #25928 terraspace up mysql-db]:     [90m# (2 unchanged attributes hidden)[0m[0m
+[2023-06-09T12:01:58 #25928 terraspace up mysql-db]: 
+[2023-06-09T12:01:58 #25928 terraspace up mysql-db]: You can apply this plan to save these new output values to the Terraform
+[2023-06-09T12:01:58 #25928 terraspace up mysql-db]: state, without changing any real infrastructure.
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [33m╷[0m[0m
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [33m│[0m [0m[1m[33mWarning: [0m[0m[1mValue for undeclared variable[0m
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [33m│[0m [0m
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [33m│[0m [0m[0mThe root module does not declare a variable named "wordpress_instances" but
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [33m│[0m [0ma value was found in file "terraform.tfvars". If you meant to use this
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [33m│[0m [0mvalue, add a "variable" block to the configuration.
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [33m│[0m [0m
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [33m│[0m [0mTo silence these warnings, use TF_VAR_... environment variables to provide
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [33m│[0m [0mcertain "global" settings to all configurations in your organization. To
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [33m│[0m [0mreduce the verbosity of these warnings, use the -compact-warnings option.
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [33m╵[0m[0m
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [0m[1m[32m
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [0m[0m[1m[32m
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: Outputs:
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: 
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: [0mdb_pw = <sensitive>
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: db_url = "dev-mysql-training-1.mysql.database.azure.com"
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: db_user = <sensitive>
+[2023-06-09T12:02:07 #25928 terraspace up mysql-db]: Time took: 25s

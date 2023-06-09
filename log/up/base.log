@@ -1,0 +1,55 @@
+# Logfile created on 2023-06-09 12:00:25 +0200 by logger.rb/v1.4.3
+[2023-06-09T12:00:26 #24361 terraspace up base]: Current directory: .terraspace-cache/westeurope/dev/stacks/base
+[2023-06-09T12:00:26 #24361 terraspace up base]: => terraform init -get -input=false >> /tmp/terraspace/log/init/base.log
+[2023-06-09T12:00:32 #24361 terraspace up base]: => terraform plan -input=false
+[2023-06-09T12:00:44 #24361 terraspace up base]: [0m[1mmodule.base.data.azurerm_resource_group.main: Reading...[0m[0m
+[2023-06-09T12:00:45 #24361 terraspace up base]: [0m[1mmodule.base.data.azurerm_resource_group.main: Read complete after 1s [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg][0m
+[2023-06-09T12:00:45 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_application_security_group.web: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/applicationSecurityGroups/dev-asg-web][0m
+[2023-06-09T12:00:45 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_virtual_network.main: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/virtualNetworks/dev-vnet-training-1][0m
+[2023-06-09T12:00:45 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_network_security_group.web: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/networkSecurityGroups/dev-nsg-web][0m
+[2023-06-09T12:00:45 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_public_ip.vm[0]: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/publicIPAddresses/dev-pip-traininig-0][0m
+[2023-06-09T12:00:45 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_private_dns_zone.mysql: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/privateDnsZones/dev.private.mysql.database.azure.com][0m
+[2023-06-09T12:00:46 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_network_security_rule.ssh: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/networkSecurityGroups/dev-nsg-web/securityRules/dev-SSH][0m
+[2023-06-09T12:00:46 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_network_security_rule.http: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/networkSecurityGroups/dev-nsg-web/securityRules/dev-HTTP][0m
+[2023-06-09T12:00:47 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_subnet.db: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/virtualNetworks/dev-vnet-training-1/subnets/db][0m
+[2023-06-09T12:00:47 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_subnet.default: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/virtualNetworks/dev-vnet-training-1/subnets/default][0m
+[2023-06-09T12:00:50 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_private_dns_zone_virtual_network_link.mysql: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/privateDnsZones/dev.private.mysql.database.azure.com/virtualNetworkLinks/mysql][0m
+[2023-06-09T12:00:51 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_subnet_network_security_group_association.default: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/virtualNetworks/dev-vnet-training-1/subnets/default][0m
+[2023-06-09T12:00:52 #24361 terraspace up base]: 
+[2023-06-09T12:00:52 #24361 terraspace up base]: [0m[1m[32mNo changes.[0m[1m Your infrastructure matches the configuration.[0m
+[2023-06-09T12:00:52 #24361 terraspace up base]: 
+[2023-06-09T12:00:52 #24361 terraspace up base]: [0mTerraform has compared your real infrastructure against your configuration
+[2023-06-09T12:00:52 #24361 terraspace up base]: and found no differences, so no changes are needed.
+[2023-06-09T12:00:52 #24361 terraspace up base]: => terraform apply -auto-approve -input=false
+[2023-06-09T12:01:04 #24361 terraspace up base]: [0m[1mmodule.base.data.azurerm_resource_group.main: Reading...[0m[0m
+[2023-06-09T12:01:05 #24361 terraspace up base]: [0m[1mmodule.base.data.azurerm_resource_group.main: Read complete after 1s [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg][0m
+[2023-06-09T12:01:05 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_application_security_group.web: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/applicationSecurityGroups/dev-asg-web][0m
+[2023-06-09T12:01:05 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_network_security_group.web: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/networkSecurityGroups/dev-nsg-web][0m
+[2023-06-09T12:01:05 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_virtual_network.main: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/virtualNetworks/dev-vnet-training-1][0m
+[2023-06-09T12:01:05 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_public_ip.vm[0]: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/publicIPAddresses/dev-pip-traininig-0][0m
+[2023-06-09T12:01:05 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_private_dns_zone.mysql: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/privateDnsZones/dev.private.mysql.database.azure.com][0m
+[2023-06-09T12:01:07 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_network_security_rule.ssh: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/networkSecurityGroups/dev-nsg-web/securityRules/dev-SSH][0m
+[2023-06-09T12:01:07 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_network_security_rule.http: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/networkSecurityGroups/dev-nsg-web/securityRules/dev-HTTP][0m
+[2023-06-09T12:01:09 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_subnet.db: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/virtualNetworks/dev-vnet-training-1/subnets/db][0m
+[2023-06-09T12:01:09 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_subnet.default: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/virtualNetworks/dev-vnet-training-1/subnets/default][0m
+[2023-06-09T12:01:09 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_private_dns_zone_virtual_network_link.mysql: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/privateDnsZones/dev.private.mysql.database.azure.com/virtualNetworkLinks/mysql][0m
+[2023-06-09T12:01:10 #24361 terraspace up base]: [0m[1mmodule.base.azurerm_subnet_network_security_group_association.default: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/virtualNetworks/dev-vnet-training-1/subnets/default][0m
+[2023-06-09T12:01:11 #24361 terraspace up base]: 
+[2023-06-09T12:01:11 #24361 terraspace up base]: [0m[1m[32mNo changes.[0m[1m Your infrastructure matches the configuration.[0m
+[2023-06-09T12:01:11 #24361 terraspace up base]: 
+[2023-06-09T12:01:11 #24361 terraspace up base]: [0mTerraform has compared your real infrastructure against your configuration
+[2023-06-09T12:01:11 #24361 terraspace up base]: and found no differences, so no changes are needed.
+[2023-06-09T12:01:20 #24361 terraspace up base]: [0m[1m[32m
+[2023-06-09T12:01:20 #24361 terraspace up base]: Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+[2023-06-09T12:01:20 #24361 terraspace up base]: [0m[0m[1m[32m
+[2023-06-09T12:01:20 #24361 terraspace up base]: Outputs:
+[2023-06-09T12:01:20 #24361 terraspace up base]: 
+[2023-06-09T12:01:20 #24361 terraspace up base]: [0m
+[2023-06-09T12:01:20 #24361 terraspace up base]: asg_id = "/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/applicationSecurityGroups/dev-asg-web"
+[2023-06-09T12:01:20 #24361 terraspace up base]: db_subnet_id = "/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/virtualNetworks/dev-vnet-training-1/subnets/db"
+[2023-06-09T12:01:20 #24361 terraspace up base]: default_subnet_id = "/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/virtualNetworks/dev-vnet-training-1/subnets/default"
+[2023-06-09T12:01:20 #24361 terraspace up base]: pip_ids = [
+[2023-06-09T12:01:20 #24361 terraspace up base]:   "/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/publicIPAddresses/dev-pip-traininig-0",
+[2023-06-09T12:01:20 #24361 terraspace up base]: ]
+[2023-06-09T12:01:20 #24361 terraspace up base]: private_dns_zone_id = "/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/privateDnsZones/dev.private.mysql.database.azure.com"
+[2023-06-09T12:01:20 #24361 terraspace up base]: Time took: 28s

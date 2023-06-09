@@ -1,0 +1,57 @@
+# Logfile created on 2023-06-09 12:02:12 +0200 by logger.rb/v1.4.3
+[2023-06-09T12:02:12 #27347 terraspace up wordpress-vm]: Current directory: .terraspace-cache/westeurope/dev/stacks/wordpress-vm
+[2023-06-09T12:02:12 #27347 terraspace up wordpress-vm]: => terraform init -get -input=false >> /tmp/terraspace/log/init/wordpress-vm.log
+[2023-06-09T12:02:19 #27347 terraspace up wordpress-vm]: => terraform plan -input=false
+[2023-06-09T12:02:31 #27347 terraspace up wordpress-vm]: [0m[1mmodule.wordpress-vm.data.azurerm_resource_group.main: Reading...[0m[0m
+[2023-06-09T12:02:32 #27347 terraspace up wordpress-vm]: [0m[1mmodule.wordpress-vm.data.azurerm_resource_group.main: Read complete after 1s [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg][0m
+[2023-06-09T12:02:32 #27347 terraspace up wordpress-vm]: [0m[1mmodule.wordpress-vm.azurerm_network_interface.vm[0]: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/networkInterfaces/dev-nic-wordpress-0][0m
+[2023-06-09T12:02:32 #27347 terraspace up wordpress-vm]: [0m[1mmodule.wordpress-vm.azurerm_network_interface_application_security_group_association.vm[0]: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/networkInterfaces/dev-nic-wordpress-0|/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/applicationSecurityGroups/dev-asg-web][0m
+[2023-06-09T12:02:32 #27347 terraspace up wordpress-vm]: [0m[1mmodule.wordpress-vm.azurerm_linux_virtual_machine.vm[0]: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Compute/virtualMachines/dev-vm-wordpress-0][0m
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: 
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [0m[1m[32mNo changes.[0m[1m Your infrastructure matches the configuration.[0m
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: 
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [0mTerraform has compared your real infrastructure against your configuration
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: and found no differences, so no changes are needed.
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [33m╷[0m[0m
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [33m│[0m [0m[1m[33mWarning: [0m[0m[1mValue for undeclared variable[0m
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [33m│[0m [0m
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [33m│[0m [0m[0mThe root module does not declare a variable named "wordpress_instances" but
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [33m│[0m [0ma value was found in file "terraform.tfvars". If you meant to use this
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [33m│[0m [0mvalue, add a "variable" block to the configuration.
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [33m│[0m [0m
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [33m│[0m [0mTo silence these warnings, use TF_VAR_... environment variables to provide
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [33m│[0m [0mcertain "global" settings to all configurations in your organization. To
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [33m│[0m [0mreduce the verbosity of these warnings, use the -compact-warnings option.
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: [33m╵[0m[0m
+[2023-06-09T12:02:36 #27347 terraspace up wordpress-vm]: => terraform apply -auto-approve -input=false
+[2023-06-09T12:02:48 #27347 terraspace up wordpress-vm]: [0m[1mmodule.wordpress-vm.data.azurerm_resource_group.main: Reading...[0m[0m
+[2023-06-09T12:02:48 #27347 terraspace up wordpress-vm]: [0m[1mmodule.wordpress-vm.data.azurerm_resource_group.main: Read complete after 1s [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg][0m
+[2023-06-09T12:02:48 #27347 terraspace up wordpress-vm]: [0m[1mmodule.wordpress-vm.azurerm_network_interface.vm[0]: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/networkInterfaces/dev-nic-wordpress-0][0m
+[2023-06-09T12:02:49 #27347 terraspace up wordpress-vm]: [0m[1mmodule.wordpress-vm.azurerm_network_interface_application_security_group_association.vm[0]: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/networkInterfaces/dev-nic-wordpress-0|/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Network/applicationSecurityGroups/dev-asg-web][0m
+[2023-06-09T12:02:49 #27347 terraspace up wordpress-vm]: [0m[1mmodule.wordpress-vm.azurerm_linux_virtual_machine.vm[0]: Refreshing state... [id=/subscriptions/e3073b20-f0fd-4a32-9112-c1280ffc637e/resourceGroups/tfstate-weu-prod-rg/providers/Microsoft.Compute/virtualMachines/dev-vm-wordpress-0][0m
+[2023-06-09T12:02:53 #27347 terraspace up wordpress-vm]: 
+[2023-06-09T12:02:53 #27347 terraspace up wordpress-vm]: [0m[1m[32mNo changes.[0m[1m Your infrastructure matches the configuration.[0m
+[2023-06-09T12:02:53 #27347 terraspace up wordpress-vm]: 
+[2023-06-09T12:02:53 #27347 terraspace up wordpress-vm]: [0mTerraform has compared your real infrastructure against your configuration
+[2023-06-09T12:02:53 #27347 terraspace up wordpress-vm]: and found no differences, so no changes are needed.
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [33m╷[0m[0m
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [33m│[0m [0m[1m[33mWarning: [0m[0m[1mValue for undeclared variable[0m
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [33m│[0m [0m
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [33m│[0m [0m[0mThe root module does not declare a variable named "wordpress_instances" but
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [33m│[0m [0ma value was found in file "terraform.tfvars". If you meant to use this
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [33m│[0m [0mvalue, add a "variable" block to the configuration.
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [33m│[0m [0m
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [33m│[0m [0mTo silence these warnings, use TF_VAR_... environment variables to provide
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [33m│[0m [0mcertain "global" settings to all configurations in your organization. To
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [33m│[0m [0mreduce the verbosity of these warnings, use the -compact-warnings option.
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [33m╵[0m[0m
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [0m[1m[32m
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [0m[0m[1m[32m
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: Outputs:
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: 
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: [0m
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: vm_public_ips = [
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]:   "20.160.53.26",
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: ]
+[2023-06-09T12:03:03 #27347 terraspace up wordpress-vm]: Time took: 27s
